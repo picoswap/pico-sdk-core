@@ -70,5 +70,5 @@ export const WETH9: { [chainId in ChainId]: Token } = {
     18,
     'WETH9',
     'Wrapped EDG'
-  ),
+  )
 }

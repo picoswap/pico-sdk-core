@@ -19,11 +19,15 @@ describe('Token', () => {
     })
 
     it('true if only decimals differs', () => {
-      expect(new Token(ChainId.EDGEWARE, ADDRESS_ONE, 9).equals(new Token(ChainId.EDGEWARE, ADDRESS_ONE, 18))).toBe(true)
+      expect(new Token(ChainId.EDGEWARE, ADDRESS_ONE, 9).equals(new Token(ChainId.EDGEWARE, ADDRESS_ONE, 18))).toBe(
+        true
+      )
     })
 
     it('true if address is the same', () => {
-      expect(new Token(ChainId.EDGEWARE, ADDRESS_ONE, 18).equals(new Token(ChainId.EDGEWARE, ADDRESS_ONE, 18))).toBe(true)
+      expect(new Token(ChainId.EDGEWARE, ADDRESS_ONE, 18).equals(new Token(ChainId.EDGEWARE, ADDRESS_ONE, 18))).toBe(
+        true
+      )
     })
 
     it('true on reference equality', () => {
