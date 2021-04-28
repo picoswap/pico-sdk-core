@@ -9,7 +9,7 @@ describe('CurrencyAmount', () => {
 
   describe('constructor', () => {
     it('works', () => {
-      const token = new Token(ChainId.MAINNET, ADDRESS_ONE, 18)
+      const token = new Token(ChainId.EDGEWARE, ADDRESS_ONE, 18)
       const amount = new TokenAmount(token, 100)
       expect(amount.raw).toEqual(JSBI.BigInt(100))
     })
@@ -23,7 +23,7 @@ describe('CurrencyAmount', () => {
   })
 
   it('token amount can be max uint256', () => {
-    const amount = new TokenAmount(new Token(ChainId.MAINNET, ADDRESS_ONE, 18), MaxUint256)
+    const amount = new TokenAmount(new Token(ChainId.EDGEWARE, ADDRESS_ONE, 18), MaxUint256)
     expect(amount.raw).toEqual(MaxUint256)
   })
 })
