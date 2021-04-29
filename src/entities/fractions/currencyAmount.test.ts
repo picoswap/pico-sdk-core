@@ -15,9 +15,9 @@ describe('CurrencyAmount', () => {
     })
   })
 
-  describe('#ether', () => {
-    it('produces ether amount', () => {
-      const amount = CurrencyAmount.ether(100)
+  describe('#edg', () => {
+    it('produces edg amount', () => {
+      const amount = CurrencyAmount.edg(100)
       expect(amount.raw).toEqual(JSBI.BigInt(100))
     })
   })

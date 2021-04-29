@@ -1,6 +1,6 @@
 import JSBI from 'jsbi'
 import { currencyEquals } from '../token'
-import { Currency, ETHER } from '../currency'
+import { Currency, EDG_CURRENCY } from '../currency'
 import invariant from 'tiny-invariant'
 import _Big from 'big.js'
 import toFormat from 'toformat'
@@ -14,11 +14,11 @@ export default class CurrencyAmount extends Fraction {
   public readonly currency: Currency
 
   /**
-   * Helper that calls the constructor with the ETHER currency
-   * @param amount ether amount in wei
+   * Helper that calls the constructor with the EDG_CURRENCY currency
+   * @param amount edg amount in wei
    */
-  public static ether(amount: BigintIsh): CurrencyAmount {
-    return new CurrencyAmount(ETHER, amount)
+  public static edg(amount: BigintIsh): CurrencyAmount {
+    return new CurrencyAmount(EDG_CURRENCY, amount)
   }
 
   // amount _must_ be raw, i.e. in the native representation
