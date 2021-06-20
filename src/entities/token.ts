@@ -59,16 +59,16 @@ export function currencyEquals(currencyA: Currency, currencyB: Currency): boolea
 export const WETH9: { [chainId in ChainId]: Token } = {
   [ChainId.EDGEWARE]: new Token(
     ChainId.EDGEWARE,
-    '0x05df5B40D6806f4c9A933e77b390AD7Bd373aDd4',
+    '0xB083e4140880E8e688B71822F5c393920E8E4E1A',
     18,
-    'WETH9',
+    'WEDG',
     'Wrapped EDG'
   ),
   [ChainId.BERESHEET]: new Token(
     ChainId.BERESHEET,
-    '0x05df5B40D6806f4c9A933e77b390AD7Bd373aDd4',
+    '0xB083e4140880E8e688B71822F5c393920E8E4E1A',
     18,
-    'WETH9',
+    'WEDG',
     'Wrapped EDG'
   )
 }
